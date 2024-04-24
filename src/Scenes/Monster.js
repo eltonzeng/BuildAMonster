@@ -73,12 +73,12 @@ class Monster extends Phaser.Scene {
 
         if (this.A_Key.isDown) {
             for(let i in my.sprite) {
-                my.sprite[i].x += 1;
+                my.sprite[i].x -= 1;
             }
         }
         if (this.D_Key.isDown) {
             for(let i in my.sprite) {
-                my.sprite[i].x -= 1;
+                my.sprite[i].x += 1;
             }
         }
     }
